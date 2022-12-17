@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="style.css">
+    <h1> Taller recuperación ejercicios LeetCode</h1><br>
+
+
+</head>
+<body>
+<h3>Escribir en código Javascript la solución de los siguientes problemas.<br>
+    1. Escribir un algoritmo que use ciclos para generar algunos patrones</h3>
+    <h4>Haz click sobre cada recuadro para ver los patrones</h4>
+<script>
+    function crearImagen1(){
+        let uno = []
+        let simbolos= "a";
+        let contenidoLista = " "
+        for (let i=0; i<=9; i++){
+            uno.push(simbolos)
+            contenidoLista +="<li>" + (uno)+ "<br>" + "</li>"
+            console.log(contenidoLista)+ "<br>"
+            lista1.innerHTML= contenidoLista + "<br>"
+        }
+    }
+</script>
+
+<div class="container">
+    <!--<div id="uno" class="uno" onload="crearImagen1()">-->
+
+
+    <div id="uno" class="uno" onclick="crearImagen1()">
+        <ul id="listado-elementos1"></ul>
+      </div>
+        <div id="dos" class="uno" onclick="crearImagen2();">
+            <ul id="listado-elementos2"></ul>
+        </div>
+    <div id="tres" class="uno" onclick="crearImagen3();">
+        <ul id="listado-elementos3"></ul>
+    </div>
+    <div id="cuatro" class="uno" onclick="crearImagen4();">
+        <ul id="listado-elementos4"></ul>
+    </div>
+    </div>
+
+<h3> 2.Haciendo uso de la librería SweetAlert pida dos números, a y b.
+    Realice un programa que calcule todos los números factoriales comprendidos entre a y b y los
+    muestre en una lista desordenada de HTML.</h3>
+
+<button id="btnEmpezar" class="btn" onclick="factorial()">EMPEZAR</button>
+ <ul id="listado-elementos5"></ul>
+
+<!-- Importar Sweet Alert para mostrar los mensajes finales -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<!-- Importar el JS donde está declarada la clase -->
+<script src="ejercicios.js"></script>
+
+</body>
+</html>
